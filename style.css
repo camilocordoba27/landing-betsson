@@ -1,0 +1,280 @@
+body {
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    background: url("images/mobile.png")  lightgray 50% / cover no-repeat;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+img {
+    border-style: none;
+}
+
+h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 16px;
+}
+
+.obg-landing-modal-buttons {
+    max-width: 320px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.obg-landing-modal-buttons a:hover {
+    background-color: #ff7520;
+}
+
+.obg-landing-modal-buttons a {
+    display: flex;
+    padding: 12px;
+    flex: 1 0 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #F60;
+    color: #fff;
+    text-decoration: none;
+}
+
+.obg-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.obg-landing-modal {
+    flex: 1;
+    padding: 24px 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.obg-landing-body {
+    display: flex;
+    text-align: center;
+    flex: 1;
+    width: 100%;
+}
+
+.obg-landing-mobile-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.obg-landing-mobile-icons img {
+    height: 48px;
+}
+
+.obg-landing-modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.obg-landing-mobile-icons {
+    margin-top: 16px;
+    display: flex;
+}
+
+.obg-landing-payment-icons img {
+    height: 20px;
+}
+
+.obg-landing-payment-icons .mastercard {
+    height: 30px;
+}
+
+.obg-landing-payment-icons {
+    display: flex;
+    padding: 16px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.obg-landing-footer-gradient {
+    background: linear-gradient(180deg, rgba(46, 67, 112, 0.00) 0%, #2E2F3C 100%);
+    height: 129px;
+    bottom: -1px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.obg-landing-footer-content {
+    display: flex;
+    background: #2E2F3C;
+    gap: 16px;
+    padding: 12px 16px;
+}
+
+.more {
+    display: none;
+    white-space: pre-wrap;
+}
+
+.fill {
+    flex: 1;
+}
+
+.obg-landing-footer-content h1 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.obg-landing-footer-content p {
+    color: #FFF;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 4px 0;
+}
+
+.obg-landing-footer-show-more {
+    padding: 8px 16px 8px 0;
+    margin: 0;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.obg-landing-footer-content img {
+    height: 32px;
+}
+
+.extended-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 48px;
+}
+
+.line {
+    height: 100%;
+    width: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.obg-landing-modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+}
+
+.obg-landing-footer {
+    width: 100%;
+}
+
+.obg-landing-body .fill{
+    display: none;
+}
+
+@media screen and (max-width: 767px), (max-height: 767px) {
+    .extended-header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 768px) {
+    body {
+        background: url("images/tablet.png") lightgray 50% / cover no-repeat;
+    }
+
+    .obg-landing-modal-buttons {
+        max-width: 360px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .obg-landing-mobile-icons {
+        display: none;
+    }
+
+    .obg-landing-modal-body {
+        margin-top: 9%;
+    }
+
+    .obg-landing-payment-icons img {
+        height: 32px;
+    }
+
+    .obg-landing-payment-icons {
+        gap: 20px;
+    }
+
+    .obg-landing-footer-content img {
+        height: 32px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background: url("images/desktop.png") lightgray 25% 50% / cover no-repeat;
+    }
+
+    .obg-landing-body > .fill{
+        display: block;
+    }
+
+    .obg-landing > .fill {
+        display: none;
+    }
+
+    .obg-landing-modal-body {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+}
+
+
