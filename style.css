@@ -278,3 +278,94 @@ h2 {
 }
 
 
+/* POPUP WHATSAPP */
+.betsson-wp-popup {
+  position: fixed;
+  right: 22px;
+  bottom: 26px;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 18px;
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #ff6900, #ff8a00);
+  color: #fff;
+  text-decoration: none;
+
+  box-shadow: 0 12px 35px rgba(0,0,0,.35);
+  animation: betssonPulse 2.2s infinite;
+}
+
+.betsson-wp-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #25D366;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+  color: #fff;
+}
+
+.betsson-wp-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  font-family: Arial, sans-serif;
+}
+
+.betsson-wp-text span {
+  font-size: 12px;
+  opacity: .9;
+}
+
+.betsson-wp-text strong {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+@keyframes betssonPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width:768px){
+
+  .betsson-wp-popup{
+    width:62px;
+    height:62px;
+    padding:0;
+    border-radius:50%;
+    right:16px;
+    bottom:18px;
+    gap:0;
+    background:#25D366;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+  }
+
+  .betsson-wp-text{
+    display:none;
+  }
+
+  .betsson-wp-icon{
+    width:100%;
+    height:100%;
+    background:transparent;
+    border-radius:50%;
+    font-size:38px;
+  }
+
+  .betsson-wp-icon i{
+    font-size:38px;
+    color:#fff;
+  }
+
+}
